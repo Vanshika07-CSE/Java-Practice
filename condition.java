@@ -285,3 +285,4 @@
 // }
 
 //SYNTAX OF TERNARY OPR -- DATATYPE VAR. = (CONDITION) ? "VALUE IF TRUE" : "VALUE IF FALSE" ;
+// condition pratice completed 
