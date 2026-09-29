@@ -184,7 +184,6 @@
 // }
 
 
-
 // 🔥🔥 Level 5 — Date Validation
 // Input lo:
 // day month year
@@ -255,7 +254,6 @@
 //     }
 //     }
 
-
 // import java.util.*;
 // public class condition{
 //     public static void main(String[] args){
@@ -286,3 +284,134 @@
 
 //SYNTAX OF TERNARY OPR -- DATATYPE VAR. = (CONDITION) ? "VALUE IF TRUE" : "VALUE IF FALSE" ;
 // condition pratice completed 
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//🔥 JAVA ARRAY — COMPLETE CONCEPT + APPROACH ROADMAP
+// 1.  Array Traversal ⭐ - Array ke har element ko ek-ek karke visit karna.
+//Kab use karna hai? - print all elements,sum,count,maximum/minimum,search,frequency.
+//MAIN LOGIC
+//for(int i = 0; i < arr.length; i++) {
+//  System.out.println(arr[i]);
+//}
+
+//2. Maximum / Minimum ⭐⭐ - Ek element ko initially max/min maan lo aur baaki elements se compare karo.
+//MAIN LOGIC
+// Maximum
+// int max = arr[0];
+// for(int i = 1; i < arr.length; i++) {
+//     if(arr[i] > max) {
+//         max = arr[i];
+//     }
+// }
+// Minimum
+// int min = arr[0];
+// for(int i = 1; i < arr.length; i++) {
+//     if(arr[i] < min) {
+//         min = arr[i];
+//     }
+// }
+// Use - largest,maximum,smallest,minimum
+// Find largest element without sorting.
+
+//3. Counting Approach ⭐⭐ - Jab kisi property wale elements ki quantity chahiye.
+//MAIN LOGIC
+// int count = 0;
+// for(int i = 0; i < arr.length; i++) {
+//     if(arr[i] % 2 == 0) {
+//         count++;
+//     }
+// }
+//Use - How many/count/number of
+
+//4. Linear Search ⭐⭐ - Target ko array ke har element se compare karo.
+//MAIN LOGIC
+// for(int i = 0; i < arr.length; i++) {
+//     if(arr[i] == target) {
+//         System.out.println("Found");
+//         break;
+//     }
+// }
+//Use - Search an element,Find index of element,Count occurrences
+//  of target,Find first occurrence,Find last occurrence
+
+//5. Two Pointers ⭐⭐- Array ke do positions/pointers ko simultaneously move karna.
+//use - Reverse array,Pair sum in sorted array,Palindrome,Remove duplicates from sorted array,Move certain elements,Partitioning.
+//MAIN LOGIC
+// int left = 0;
+// int right = arr.length - 1;
+// while(left < right) {
+//     // logic
+//     left++;
+//     right--;
+// }
+//6. Second Largest ⭐⭐-Ek pass mein largest aur second largest maintain karo.
+//Kab - Find second largest without sorting.
+//MAIN LOGIC
+// int largest = Integer.MIN_VALUE;
+// int second = Integer.MIN_VALUE;
+// for(int i = 0; i < arr.length; i++) {
+//     if(arr[i] > largest) {
+//         second = largest;
+//         largest = arr[i];
+//     }
+//     else if(arr[i] > second && arr[i] != largest) {
+//         second = arr[i];
+//     }
+// }
+
+//7. Duplicate Elements ⭐⭐- if(arr[i] == arr[j]) 
+//8. Move Zeros ⭐⭐- Non-zero elements ko beginning mein place karo.
+//Two-pointer/write-index approach:
+//MAIN LOGIC
+// int index = 0;
+// for(int i = 0; i < arr.length; i++) {
+//     if(arr[i] != 0) {
+//         arr[index] = arr[i];
+//         index++;
+//     }
+// }
+//9.Prefix Sum ⭐⭐ - 
+//MAIN LOGIC
+// prefix[0] = arr[0];
+
+// for(int i = 1; i < arr.length; i++) {
+//     prefix[i] = prefix[i - 1] + arr[i];
+// }
+//10. Sliding Window ⭐⭐- Array ke continuous elements ki ek window maintain karte hain.
+//MAIN LOGIC
+// int sum = 0;
+// for(int i = 0; i < k; i++) {
+//     sum += arr[i];
+// }
+// for(int i = k; i < arr.length; i++) {
+//     sum += arr[i];
+//     sum -= arr[i - k];
+// }
+//11. Binary Search ⭐⭐
+// target == mid → found
+//target < mid  → left side
+//target > mid  → right side
+// MAIN LOGIC
+// int left = 0;
+// int right = arr.length - 1;
+// while(left <= right) {
+//     int mid = left + (right - left) / 2;
+//     if(arr[mid] == target) {
+//         System.out.println("Found");
+//         break;
+//     }
+//     else if(arr[mid] < target) {
+//         left = mid + 1;
+//     }
+//     else {
+//         right = mid - 1;
+//     }
+// }
+//12.Kadane's Algorithm ⭐⭐ - Ye maximum subarray sum ke liye.
+// MAIN LOGIC
+// int current = arr[0];
+// int maximum = arr[0];
+// for(int i = 1; i < arr.length; i++) {
+//     current = Math.max(arr[i], current + arr[i]);
+//     maximum = Math.max(maximum, current);
+// }
