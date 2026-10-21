@@ -287,6 +287,8 @@
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //🔥 JAVA ARRAY — COMPLETE CONCEPT + APPROACH ROADMAP
+
+
 // 1.  Array Traversal ⭐ - Array ke har element ko ek-ek karke visit karna.
 //Kab use karna hai? - print all elements,sum,count,maximum/minimum,search,frequency.
 //MAIN LOGIC
@@ -414,4 +416,5 @@
 // for(int i = 1; i < arr.length; i++) {
 //     current = Math.max(arr[i], current + arr[i]);
 //     maximum = Math.max(maximum, current);
-// }
+// }      
+
